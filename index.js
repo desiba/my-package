@@ -4,7 +4,7 @@ const crypto = require('crypto');
 const path = require('path')
 const jsonPathFile = path.join(__dirname, './error_bank.json')
 
-const Exception = require( path.resolve( __dirname, "./error.js" ) );
+const Exception = require('./error');
 
 let jsonFile = fs.readFileSync(jsonPathFile);
 jsonFile = JSON.parse(jsonFile);
